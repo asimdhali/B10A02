@@ -6,5 +6,396 @@
 
 /* ========== SHARED CSS =========== */
 body{
-    /* background-color: #000; */
+    background-color: #000;
+    color: #ffffff;
+}
+
+img{
+    width: 100%;
+}
+
+.primary-btn{
+    background-color: tomato;
+    color: #ffffff;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+}
+
+.secondary-btn{
+    padding: .8rem 1rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid wheat;
+}
+
+/* ========== BANNER SECTION STARTS ========== */
+.banner-section{
+    width: 100vw;
+    height: 100vh;
+}
+
+.banner-section-container{
+    margin: 0rem 4rem;
+}
+
+.banner-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.banner-header-logo{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: tomato;
+}
+
+.banner-header-logo span{
+    color: yellow;
+}
+
+/* ---------- NAVBAR ----------- */
+.banner-header-navbar{
+    border: 1px solid #ffffff3b;
+    border-radius: 2rem;
+    padding: .5rem;
+}
+
+.banner-header-navbar ul{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.banner-header-navbar ul a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: .8rem 1rem;
+    text-decoration: none;
+    border: none;
+    border-radius: .6rem;
+    font-size: 1.5rem;
+}
+
+/* ========== BANNER BOTTOM STARTS ========== */
+.banner-bottom-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4.5rem;
+}
+
+.banner-bottom-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-bottom-left h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.banner-bottom-left p{
+    margin-top: 2rem;
+}
+
+.banner-btm-btn{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+/* ----------- BANNER RIGHT------------ */
+
+.banner-bottom-right{
+    position: relative;
+}
+
+.banner-bottom-right #videos{
+    position: absolute;
+    padding: 0.6rem 1rem;
+    background-color: #ffffff3b;
+    border-radius: 0.5rem;
+    border: none;
+    top: 9rem;
+    right: 0rem;
+    color: white;
+    z-index: 99;
+}
+
+.banner-bottom-right img{
+    position: relative;
+}
+
+#videos .txt{
+    opacity: 0.5;
+}
+
+.banner-bottom-right #videos .txt-num{
+    font-size: 3rem;
+}
+
+.banner-bottom-right #tutorials{
+    position: absolute;
+    display: flex;
+    padding: 0.6rem 1rem;
+    background-color: #ffffff3b;
+    border-radius: 0.5rem;
+    border: none;
+    bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+
+.circle::before{
+    content: '';
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+    background: tomato;
+    border-radius: 50%;
+}
+
+.tutorial span{
+    color: white;
+}
+
+.tutorial .num{
+    font-size: 1.5rem;
+}
+
+.tutorial .txt{
+    opacity: 0.7;
+}
+
+/* ============== NEW CHALLENGE STARTS ============== */
+.new-challenge-container{
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff1f;
+    padding: 20px 50px;
+    border-radius: 15px;
+    margin-top: 80px;
+}
+
+.n-c-content{
+    display: flex;
+    gap: 20px;
+}
+
+.n-c-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.n-c-left h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.n-c-left p{
+    margin-top: 20px;
+    color: #ffffffb6;
+}
+
+.n-c-left button{
+    margin-top: 20px;
+}
+
+/* =========== HABITS STARTS =========== */
+.habits{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.habits-card-container{
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+}
+.habits-card-container img{
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* ========= RUN EXTRA STARTS ========== */
+.runner{
+    background-color: #ffffff3b;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.run-left h1, .run-left p{
+    margin-bottom: 20px;
+}
+
+.run-right img{
+    width: 250px;
+    border-radius: 20px;
+}
+
+/* ============ BMI CALCULATOR STARTS ============ */
+.bmi-content{
+    padding: 15px 20px;
+    background-color: #ffffff3b;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.bmi-chart table{
+    border-collapse: collapse;
+}
+
+.bmi-chart td, .bmi-chart th{
+    border: 1px solid #ffffff3b;
+    padding: 5px 10px;
+}
+
+/* --------- FORM -------- */
+.form-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-content input{
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    background-color: #ffffff1f;
+    border: none;
+    margin: 5px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+}
+
+.form-content select{
+    background-color: #ffffff1f;
+    border: none;
+    font-size: 1.5rem;
+    color: #ffffff3b;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.calculate{
+    margin-top: 15px;
+}
+
+/* =========== MEET SECTION STYLES ========== */
+.meet{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.meet p{
+    margin-bottom: 20px;
+}
+
+.meet-card-container{
+    background-color: #ffffff3b;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    border-radius: 10px;
+    padding: 20px ;
+}
+
+.meet-card-profile:nth-child(1){
+    background-image: url(../images/trainer1.png);
+}
+
+.meet-card-profile:nth-child(2){
+    background-image: url(../images/trainer2.png);
+}
+
+.meet-card-profile:nth-child(3){
+    background-image: url(../images/trainer3.png);
+}
+
+.meet-card-profile:nth-child(4){
+    background-image: url(../images/trainer4.png);
+}
+
+.meet-card-profile:nth-child(5){
+    background-image: url(../images/trainer5.png);
+}
+
+.meet-card-profile:nth-child(6){
+    background-image: url(../images/trainer6.png);
+}
+
+.meet-card-profile{
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    position: relative;
+}
+
+.meet-card-profile .profile-text{
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+}
+
+/* ============ FOOTER STARTS =========== */
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 80px;
+    gap: 20px;
+}
+
+.description h1{
+    color: tomato;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.footer-container .middle ul, .footer-container .right ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.footer-container .middle ul a, .footer-container .right ul a{
+    color: #ffffffb6;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.footer-bottom hr{
+    margin-top: 30px;
+    opacity: 0.5;
+}
+
+.footer-bottom p{
+    text-align: center;
+    margin-top: 15px;
+    color: #ffffffb6;
 }
