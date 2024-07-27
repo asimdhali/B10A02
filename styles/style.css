@@ -35,7 +35,9 @@ a{
     color: rgb(255,255,255);
 }
 
-p{
+p,
+th,
+td{
     color: rgba(255,255,255,0.5);
     font-size: .88rem;
     font-weight: 400;
@@ -353,13 +355,32 @@ h2{
 
 
 /* ============ BMI CALCULATOR STARTS ============ */
+.bmi-heading{
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.bmi-heading p{
+    margin-top: 0.7rem;
+}
+
+.bmi-calculator{
+    background: rgb(34, 34, 34);
+}
+
+.bmi-calc-content{
+    padding: 2.5rem;
+}
+
 .bmi-content{
-    padding: 15px 20px;
-    background-color: #ffffff3b;
-    border-radius: 10px;
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 4rem;
+}
+
+.bmi-chart h2{
+    margin-bottom: 3rem;
+    font-size: 1.75rem;
 }
 
 .bmi-chart table{
@@ -367,37 +388,63 @@ h2{
 }
 
 .bmi-chart td, .bmi-chart th{
-    border: 1px solid #ffffff3b;
-    padding: 5px 10px;
+    padding: 1rem;
+    border: 0.06rem solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.bmi-chart th{
+    color: rgb(255,255,255);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 120%;
 }
 
 /* --------- FORM -------- */
-.form-content{
+.calc-bmi{
     display: flex;
     flex-direction: column;
 }
 
-.form-content input{
-    font-size: 1.2rem;
-    padding: 5px 10px;
-    background-color: #ffffff1f;
-    border: none;
-    margin: 5px;
-    font-size: 1.5rem;
-    border-radius: 8px;
+.calc-bmi h1{
+    font-size: 1.75rem;
 }
 
+.calc-bmi p{
+    width: 400px;
+    text-align: justify;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.bmi-form{
+    max-width: 600px;
+}
+
+.form-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0.5rem;
+}
+
+.sngl-full{
+    grid-column: span 2;
+}
+
+.form-content input,
 .form-content select{
-    background-color: #ffffff1f;
+    color: rgb(255, 255,255,0.6);
+    background: rgb(255,255,255,0.1);
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    line-height: 1.38rem;
     border: none;
-    font-size: 1.5rem;
-    color: #ffffff3b;
-    padding: 5px 10px;
-    border-radius: 8px;
 }
 
-.calculate{
-    margin-top: 15px;
+.form-content button{
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    margin-top: 1rem;
 }
 
 /* =========== MEET SECTION STYLES ========== */
