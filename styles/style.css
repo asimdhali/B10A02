@@ -23,15 +23,14 @@ body{
 }
 
 .container{
-    margin: 2rem 7rem;
+    margin: 4rem 11rem;
 }
 
 img{
     width: 100%;
 }
 
-a{
-    
+a{ 
     color: rgb(255,255,255);
 }
 
@@ -444,101 +443,110 @@ h2{
 
 .form-content button{
     padding: 1rem 2.5rem 1rem 2.5rem;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
 }
+
+
 
 /* =========== MEET SECTION STYLES ========== */
 .meet{
-    margin-top: 50px;
+    margin-top: 5rem;
     text-align: center;
 }
 
-.meet p{
-    margin-bottom: 20px;
-}
-
 .meet-card-container{
-    background-color: #ffffff3b;
+    margin-top: 4rem;
+    background: rgba(255, 255, 255, 0.1);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    border-radius: 10px;
-    padding: 20px ;
-}
-
-.meet-card-profile:nth-child(1){
-    background-image: url(../images/trainer1.png);
-}
-
-.meet-card-profile:nth-child(2){
-    background-image: url(../images/trainer2.png);
-}
-
-.meet-card-profile:nth-child(3){
-    background-image: url(../images/trainer3.png);
-}
-
-.meet-card-profile:nth-child(4){
-    background-image: url(../images/trainer4.png);
-}
-
-.meet-card-profile:nth-child(5){
-    background-image: url(../images/trainer5.png);
-}
-
-.meet-card-profile:nth-child(6){
-    background-image: url(../images/trainer6.png);
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 1.13rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .meet-card-profile{
-    background-size: cover;
-    width: 400px;
-    height: 300px;
-    background-repeat: no-repeat;
-    border-radius: 15px;
+    max-width: 20.42rem;
     position: relative;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.meet-card-profile img{
+    width: 100%;
+    height: 270px;
+    border-radius: 1.13rem;
 }
 
 .meet-card-profile .profile-text{
     position: absolute;
     bottom: 0;
-    padding: 10px;
+    padding: 1.5rem;
+    text-align: left;
 }
 
+
+
+
 /* ============ FOOTER STARTS =========== */
+.footer-container{
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-content{
+    text-align: center;
+}
 
 .footer{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 80px;
-    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 4rem 0;
+    text-align: center;
 }
 
 .description h1{
-    color: tomato;
-    font-size: 2rem;
-    margin-bottom: 15px;
+    color: rgb(230, 83, 60);
+    font-size: 3rem;
+    margin-bottom: 1.3rem;
+    text-align: left;
 }
 
-.footer-container .middle ul, .footer-container .right ul{
+.description p{
+    text-align: justify;
+    width: 400px;
+}
+
+.middle ul,
+.right ul{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
 }
 
-.footer-container .middle ul a, .footer-container .right ul a{
-    color: #ffffffb6;
+.footer h2{
+    font-size: 2rem;
+    text-align: left;
+}
+
+.footer a{
+    font-size: 1.44rem;
+    color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
-    font-size: 1.3rem;
+    margin-top: 1rem;
+    text-align: left;
 }
 
 .footer-bottom hr{
-    margin-top: 30px;
-    opacity: 0.5;
+    border: 0.13rem solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1.5rem;
 }
 
 .footer-bottom p{
     text-align: center;
-    margin-top: 15px;
-    color: #ffffffb6;
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 1.25rem;
+    padding-bottom: 4rem;
 }
