@@ -169,7 +169,7 @@ h2{
     margin-top: 3rem;
 }
 
-.banner-btm-btn button{
+.banner-btm-btn button{  
     padding: 1rem 2.5rem 1rem 2.5rem;
 }
 
@@ -321,13 +321,14 @@ h2{
 
 /* ========= RUN EXTRA STARTS ========== */
 .runner {
-    border-radius: 1.13rem;
     background: rgb(34, 34, 34);
-    padding: 2.5rem 3rem;
+    padding: 1rem 2.5rem;
+    border-radius: 1.13rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 6rem;
+    gap: 3rem;
 }
 
 .run-left h1{
@@ -345,9 +346,11 @@ h2{
 }
 
 .run-right img{
-    width: 250px;
-    border-radius: 20px;
+    max-width: 30rem;
+    height: auto;
+    border-radius: 1.13rem;
 }
+
 
 /* ============ BMI CALCULATOR STARTS ============ */
 .bmi-content{
