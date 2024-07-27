@@ -22,8 +22,37 @@ body{
 
 }
 
+.container{
+    margin: 2rem 7rem;
+}
+
 img{
     width: 100%;
+}
+
+a{
+    
+    color: rgb(255,255,255);
+}
+
+p{
+    color: rgba(255,255,255,0.5);
+    font-size: .88rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.03rem;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 120%;
+}
+
+h2{
+    font-size: 1.13rem;
+    font-weight: 600;
+    line-height: 120%;
 }
 
 .primary-btn{
@@ -53,10 +82,7 @@ img{
 .banner-section{
     width: 100vw;
     height: 100vh;
-}
-
-.container{
-    margin: 2rem 4rem;
+    position: relative;
 }
 
 .banner-header{
@@ -99,7 +125,6 @@ img{
 }
 
 .banner-header-navbar ul a{
-    color: rgb(255,255,255);
     padding: .8rem 1rem;
     text-decoration: none;
     font-size: 1.2rem;
@@ -111,6 +136,7 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 5rem;
 }
 
 .banner-bottom-left{
@@ -132,30 +158,36 @@ img{
 
 .banner-bottom-left p{
     margin-top: 2rem;
+    max-width: 500px;
+    text-align: justify;
 }
 
 .banner-btm-btn{
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     display: flex;
     gap: 2.5rem;
     margin-top: 3rem;
 }
 
-/* ----------- BANNER RIGHT------------ */
+.banner-btm-btn button{
+    padding: 1rem 2.5rem 1rem 2.5rem;
+}
 
+/* ----------- BANNER RIGHT------------ */
 .banner-bottom-right{
     position: relative;
 }
 
+
 .banner-bottom-right #videos{
     position: absolute;
     padding: 0.6rem 1rem;
-    background-color: #ffffff3b;
-    border-radius: 0.5rem;
-    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    border: 0.06rem solid rgba(255, 255, 255, 0.1);
     top: 9rem;
     right: 0rem;
-    color: white;
+    color: rgb(255, 255, 255);
     z-index: 99;
 }
 
@@ -163,57 +195,58 @@ img{
     position: relative;
 }
 
-#videos .txt{
-    opacity: 0.5;
-}
-
 .banner-bottom-right #videos .txt-num{
     font-size: 3rem;
+    font-weight: 900;
+}
+
+#videos .txt{
+    color: rgba(255, 255, 255, 0.65);
+    font-size: .81rem;
+    font-weight: 400;
 }
 
 .banner-bottom-right #tutorials{
     position: absolute;
     display: flex;
     padding: 0.6rem 1rem;
-    background-color: #ffffff3b;
-    border-radius: 0.5rem;
-    border: none;
+    background: rgba(48, 48, 48, 0.54);
+    border: 0.06rem solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
     bottom: 2rem;
+    gap: 0.9rem;
     justify-content: center;
     align-items: center;
-    gap: 0.7rem;
+    text-align: left;
 }
 
 
 .circle::before{
     content: '';
     display: block;
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 2.5rem;
+    height: 2.5rem;
     background: tomato;
     border-radius: 50%;
 }
 
-.tutorial span{
-    color: white;
-}
-
 .tutorial .num{
     font-size: 1.5rem;
-}
-
-.tutorial .txt{
-    opacity: 0.7;
+    color: rgb(250, 250, 249);
+    font-weight: 900;
+    text-align: left;
 }
 
 /* ============== NEW CHALLENGE STARTS ============== */
 .new-challenge-container{
     display: flex;
+    display: none;
     justify-content: center;
     background-color: #ffffff1f;
     padding: 20px 50px;
     border-radius: 15px;
     margin-top: 80px;
+    
 }
 
 .n-c-content{
@@ -242,36 +275,73 @@ img{
     margin-top: 20px;
 }
 
+
 /* =========== HABITS STARTS =========== */
 .habits{
-    text-align: center;
-    margin-top: 100px;
+    /* margin-top: 6rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.habits p{
+    max-width: 700px;
+    text-align: justify;
+    margin-top: 0.8rem;
 }
 
 .habits-card-container{
-    margin-top: 25px;
+    margin-top: 3.5rem;
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
+
+.habit-card-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 2rem;
+}
+
 .habits-card-container img{
-    width: 150px;
+    max-width: 330px;
     border-radius: 50%;
-    margin-bottom: 20px;
+}
+
+.habits-card-container h2{
+    margin-top: 2rem;
+}
+
+.habits-card-container p{
+    text-align: center;
 }
 
 /* ========= RUN EXTRA STARTS ========== */
-.runner{
-    background-color: #ffffff3b;
-    padding: 25px;
+.runner {
+    border-radius: 1.13rem;
+    background: rgb(34, 34, 34);
+    padding: 2.5rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
-    border-radius: 10px;
+    margin-top: 6rem;
 }
 
-.run-left h1, .run-left p{
-    margin-bottom: 20px;
+.run-left h1{
+    margin-bottom: 1.5rem;
+}
+
+.run-left p{
+    max-width: 700px;
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+
+.run-left button{
+    padding: 1rem 2.5rem 1rem 2.5rem;
 }
 
 .run-right img{
