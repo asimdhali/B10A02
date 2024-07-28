@@ -102,6 +102,11 @@ h2{
     color: yellow;
 }
 
+.bar-icon{
+    font-size: 1.5rem;
+    display: none;
+}
+
 
 
 /* ---------- NAVBAR ----------- */
@@ -317,7 +322,8 @@ h2{
 }
 
 .habits-card-container p{
-    text-align: center;
+    text-align: justify;
+    width: 200px;
 }
 
 /* ========= RUN EXTRA STARTS ========== */
@@ -549,4 +555,74 @@ h2{
     color: rgba(255, 255, 255, 0.35);
     font-size: 1.25rem;
     padding-bottom: 4rem;
+}
+
+/* ================ MEDIA QUERIES FOR SMALL DEVICE =============== */
+@media screen and (max-width: 576px){
+    
+    .container{
+        margin: .88rem .88rem;
+    }
+    
+    .banner-section{
+        height: auto;
+    }
+    .banner-header-navbar{
+        display: none;
+    }
+
+    .bar-icon{
+        display: block;
+        margin-right: 1.5rem;
+    }
+
+    .banner-bottom-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-bottom-right{
+        margin-top: 3rem;
+    }
+
+    .banner-bottom-right #videos{
+        top: 4rem;
+        right: -2rem;
+    }
+
+    .banner-bottom-right #tutorials{
+        bottom: 14rem;
+    }
+
+    .habits{
+        margin-top: 4rem;
+    }
+
+    .habit-card-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .habit-card-content img{
+        width: auto;
+        height: 220px;
+    }
+
+    .habit-card-content h2{
+        font-size: 2rem;
+    }
+
+    .habit-card-content p{
+        width: 400px;
+        text-align: justify;
+    }
+
+    .runner{
+        margin-top: 4rem;
+        flex-direction: column;
+    }
+
+    .run-left h1{
+        font-size: 2rem;
+    }
 }
