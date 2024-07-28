@@ -748,3 +748,112 @@ h2{
         margin-top: 1.5rem;
     }
 }
+
+
+/* =========== MEDIA QUERIES FOR MEDIUM DISPLAY (576PX 5O 992PX========== */
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .banner-section{
+        height: auto;
+    }
+
+    .container{
+        margin: 1rem 2rem;
+    }
+
+    .banner-bottom-container{
+        flex-direction: column;
+    }
+
+    .banner-bottom-left h1{
+        /* text-align: center; */
+        font-size: 5rem;
+    }
+
+    .banner-bottom-left span{
+        font-size: 10rem;
+    }
+
+    .banner-bottom-left p{
+        font-size: 1.2rem;
+        max-width: 900px;
+        margin-bottom: 2rem;
+    }
+
+    .banner-btm-btn{
+        margin: 0 auto;
+    }
+
+    .banner-bottom-right{
+        margin-top: 3rem;
+        width: 500px;
+    }
+
+    .banner-bottom-right #tutorials{
+        bottom: 10rem;
+    }
+
+    .habits{
+        margin-top: 5rem;
+    }
+
+    .habits p{
+        max-width: 800px;
+        text-align: justify;
+        margin-top: 0.8rem;
+    }
+
+    .habit-card-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+    .habits-card-container img{
+        width: 800px;
+        border-radius: 50%;
+    }
+
+    .habits-card-container p{
+        text-align: justify;
+        width: 350px;
+    }
+
+    .bmi-heading{
+        margin-top: 5rem;
+    }
+
+    .bmi-content{
+        flex-direction: column;
+    }
+
+    .bmi-chart,
+    .calc-bmi{
+        text-align: center;
+    }
+
+    .bmi-chart .table{
+        margin: 0 auto;
+    }
+
+    .calc-bmi{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-content .form-btn{
+        grid-column: span 2;
+    }
+
+    .footer{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .description{
+        grid-column: 1/-1;
+    }
+}
