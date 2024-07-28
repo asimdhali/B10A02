@@ -559,7 +559,6 @@ h2{
 
 /* ================ MEDIA QUERIES FOR SMALL DEVICE =============== */
 @media screen and (max-width: 576px){
-    
     .container{
         margin: .88rem .88rem;
     }
@@ -595,7 +594,7 @@ h2{
     }
 
     .habits{
-        margin-top: 4rem;
+        margin-top: 5rem;
     }
 
     .habit-card-content{
@@ -620,9 +619,70 @@ h2{
     .runner{
         margin-top: 4rem;
         flex-direction: column;
+        padding: 2rem ;
+    }
+
+    .run-left .br{
+        display: none;
     }
 
     .run-left h1{
         font-size: 2rem;
+        text-align: center;
+    }
+
+    .run-left button{
+        width: 100%;
+    }
+
+    .bmi-heading{
+        margin-top: 4.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .bmi-heading h1{
+        font-size: 2rem;
+    }
+
+    .bmi-heading p{
+        text-align: justify;
+        padding: 0 2rem 0 2rem;
+    }
+
+    .bmi-content{
+        flex-direction: column;
+    }
+
+    .bmi-chart,
+    .calc-bmi{
+        text-align: center;
+    }
+
+    .bmi-chart h2{
+        font-size: 1.3rem;
+    }
+
+    .bmi-chart .table{
+        margin: 0 auto;
+    }
+
+    .calc-bmi{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .calc-bmi h1{
+        font-size: 1.2rem;
+    }
+
+    .calc-bmi p{
+        text-align: justify;
+        margin-top: 1.5rem;
+        padding: 0 2rem 0 2rem;
+    }
+
+    .bmi-form{
     }
 }
