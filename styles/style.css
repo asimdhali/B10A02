@@ -243,36 +243,6 @@ h2{
     text-align: left;
 }
 
-/* ============== NEW CHALLENGE STARTS ============== */
-/* General reset and base styles */
-.challenge-sec{
-    position: relative;
-}
-
-.challenge-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: .5;
-    z-index: -1;
-}
-
-.content{
-    width: 100%;
-    position: absolute;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.1); 
-    top: 2rem;
-    text-align: center;
-}
-
-.new-btm-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 /* =========== HABITS STARTS =========== */
 .habits{
     /* margin-top: 6rem; */
