@@ -270,7 +270,7 @@ h2{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .habits-card-container img{
@@ -439,9 +439,9 @@ h2{
 
 .meet-card-profile img{
     width: 100%;
-    height: 30rem;
+    height: 20rem;
     border-radius: 1.13rem;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .meet-card-profile .profile-text{
@@ -449,9 +449,10 @@ h2{
     bottom: 1rem;
     left: 1rem;
     text-align: left;
-    background-color: #ffffff23;
+    background-color: #14101065;
     border-radius: 8px;
     padding: .8rem;
+    margin: 0 auto;
 }
 
 
@@ -777,6 +778,21 @@ label{
 
 /* =========== MEDIA QUERIES FOR MEDIUM DISPLAY (576PX 5O 992PX========== */
 @media screen and (min-width: 576px) and (max-width: 992px){
+    .banner-header-navbar ul{
+        gap: .5rem;
+    }
+
+    .banner-header-navbar ul a{
+        font-size: 1.2rem;
+        padding: 0rem .5rem;
+        display: flex;
+    }
+
+    .primary-btn{
+        padding: .3rem 0rem;
+        border-radius: 1rem;
+    }
+
     .banner-section{
         height: auto;
     }
@@ -791,11 +807,11 @@ label{
 
     .banner-bottom-left h1{
         /* text-align: center; */
-        font-size: 5rem;
+        font-size: 3.5rem;
     }
 
     .banner-bottom-left span{
-        font-size: 10rem;
+        font-size: 8rem;
     }
 
     .banner-bottom-left p{
@@ -834,7 +850,7 @@ label{
     }
 
     .habits-card-container img{
-        width: 800px;
+        max-width: 250px;
         border-radius: 50%;
     }
 
@@ -869,6 +885,10 @@ label{
 
     .form-content .form-btn{
         grid-column: span 2;
+    }
+
+    .feedback-section{
+        margin-top: 4rem;
     }
 
     .footer{
