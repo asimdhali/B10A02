@@ -455,6 +455,70 @@ h2{
 }
 
 
+/* ======== FEEDBACK SECTION ======== */
+.feedback-section{
+    max-width: 1024px;
+    height: auto;
+    background-color: #ffffff23;
+    color: white;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+
+.feedback-form{
+    display: block;
+    padding: 1.5rem;
+}
+
+.feedback-form h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.feedback-form p{
+    text-align: center;
+    padding: 0rem 4rem;
+}
+
+.feedback-form .form-group{
+    margin-bottom: .8rem;
+}
+
+label{
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.feedback-form .form-group input{
+    padding: 1rem;
+    height: unset;
+}
+
+.form-group textarea{
+    padding: .8rem;
+}
+
+.form-input{
+    display: block;
+    width: 100%;
+    color: #fff;
+    background-color: #ffffff23;
+    border: 1px solid #ced4da57;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out;
+}
+
+.feedback-form .inp-btn{
+    width: 100%;
+    text-align: center;
+}
+
+.feedback-form .submit{
+    padding: .8rem 2rem;
+}
+
 
 
 /* ============ FOOTER STARTS =========== */
