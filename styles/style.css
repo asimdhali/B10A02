@@ -66,6 +66,13 @@ h2{
     font-size: 1.5rem;
 }
 
+.primary-btn:hover,
+.secondary-btn:hover{
+    background-color: rgb(255,99,71);
+    border: none;
+    cursor: pointer;
+}
+
 .secondary-btn{
     padding: .8rem 1rem;
     text-decoration: none;
@@ -125,9 +132,10 @@ h2{
 }
 
 .banner-header-navbar ul a:hover{
-    background: rgb(230, 83, 60);
+    background-color: rgb(255,99,71);
     transition: all 300ms ease;
     border-radius: 2rem;
+    transform: scale(1.05);
 }
 
 .banner-header-navbar ul a{
@@ -234,6 +242,21 @@ h2{
     height: 2.5rem;
     background: tomato;
     border-radius: 50%;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle .play{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 1.6rem;
 }
 
 .tutorial .num{
@@ -569,6 +592,11 @@ label{
     text-decoration: none;
     margin-top: 1rem;
     text-align: left;
+}
+
+.footer a:hover{
+    color: rgba(255,255,255,0.8);
+    text-decoration: underline;
 }
 
 .footer-bottom hr{
